@@ -219,88 +219,169 @@ h3 {
 
 }
 
-@media(min-width:768px){
+@media(min-width:768px) {
     .grafico--node {
         grid-row: 5/6;
         grid-column: 2/4;
     }
-   
+
 }
 
 
 /* nosotros  */
 
-.nosotros{
+.nosotros {
     display: grid;
     grid-template-columns: 1fr;
     padding: 2rem;
 
 }
-.nosotros__imagen{
+
+.nosotros__imagen {
     grid-row: 1/2;
     grid-column: 100%;
     width: 100%;
-    
-    
-}
 
-.nosotros__contenido{
 
 }
 
-@media(min-width:768px){
-    .nosotros{
-        
-        grid-template-columns: repeat(2,1fr);
+.nosotros__contenido {}
+
+@media(min-width:768px) {
+    .nosotros {
+
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
-        
-        
-    
+
+
+
     }
 
-    .nosotros__imagen{
+    .nosotros__imagen {
         grid-column: 2/3;
         height: 100%;
-    
+
     }
-   
+
 }
 
 /* BLOQUES  */
 
-.bloques{
+.bloques {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 1rem;
 
 }
-@media(min-width:500px){
-    .bloques{
-        grid-template-columns: repeat(2,1fr);
+
+@media(min-width:500px) {
+    .bloques {
+        grid-template-columns: repeat(2, 1fr);
     }
-   
-}
-@media(min-width:768px){
-    .bloques{
-        grid-template-columns: repeat(4,1fr);
-    }
-   
+
 }
 
-.bloque{
+@media(min-width:768px) {
+    .bloques {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+.bloque {
     text-align: center;
 
 }
 
-.bloque__titulo{
+.bloque__titulo {
     margin: 0;
 
 }
 
-.bloque__imagen{
+.bloque__imagen {
     width: 100%;
+}
+
+/* pagina del producto  */
+.camisa {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+    margin: 0 2rem;
+
+
+
+}
+
+.camisa__contenido {
+    padding: 1fr;
+
+}
+
+.camisa__imagen {
+max-width: auto;
+height: 50rem;
+
+}
+
+@media(min-width:600px) {
+    .camisa {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
 }
 
 
 
+
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+}
+
+.formulario__campo {
+    border: 1rem solid var(--primarioOscuro);
+    background-color: var(--primario);
+    color: var(--blanco);
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    padding: 1rem;
+    
+
+
+}
+
+.formulario__submit {
+    margin-top: 1rem;
+    background-color: var(--secundario);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    padding: 2rem;
+   
+}
+
+.formulario__submit:hover {
+    cursor: pointer;
+    background-color: var(--secundarioOscuro);
+
+
+}
+
+@media(min-width:500px) {
+    .formulario {
+
+        grid-template-columns: repeat(2, 1fr);
+
+
+    }
+    .formulario__submit{
+        grid-column: 1/3;
+    }
+}
